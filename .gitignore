@@ -10,6 +10,7 @@ Thumbs.db
 # IDE/Editor Files
 .idea/
 .vscode/
+.idx/
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
@@ -49,6 +50,7 @@ wp-content/plugins/hello.php
 *.gz
 dist/
 build/
+.idx/dev.idx
 
 # Testing
 phpunit.xml
