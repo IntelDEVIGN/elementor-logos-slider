@@ -8,7 +8,21 @@
  * Text Domain: elementor-logos-slider
  */
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) exit;php
+// Function to optimize images using ImageMagick
+function optimize_logo_image($image_path) {
+    // Check if ImageMagick is installed
+    if (class_exists('Imagick')) {
+        $image = new Imagick($image_path);
+        $image->stripImage(); // Remove unnecessary metadata
+        $image->setImageCompression(Imagick::COMPRESSION_JPEG); // Set compression type
+        $image->setImageCompressionQuality(80); // Set compression quality
+        $image->writeImage($image_path); // Overwrite the original image
+    }
+}
+
+// Call the function when a new logo is uploaded
+add_action('add_attachment', 'optimize_logo_image');
 
 final class Elementor_Logos_Slider {
     private static $_instance = null;
