@@ -1,5 +1,10 @@
 # Elementor Logos Slider Widget
 
+![WordPress](https://img.shields.io/badge/WordPress-5.0%2B-blue)
+![Elementor](https://img.shields.io/badge/Elementor-3.0%2B-red)
+![PHP](https://img.shields.io/badge/PHP-7.0%2B-purple)
+![License](https://img.shields.io/badge/License-GPL%20v2-green)
+
 A customizable and responsive logo slider widget for Elementor page builder. Features smooth infinite scroll animation, hover effects, and image protection.
 
 ## Requirements
